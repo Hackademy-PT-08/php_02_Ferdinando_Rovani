@@ -33,3 +33,25 @@ foreach($users as $user){
 
     }
 }
+
+
+// Dato un array di numeri a scelta, scrivere un programma che calcoli la media solo dei numeri pari contenuti all’interno dell’array
+
+$numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+$totalePari = 0;
+$contatorePari = 0;
+
+
+foreach ($numeri as $numero) {
+    
+    if ($numero % 2 == 0) {
+        $totalePari += $numero;        
+        $contatorePari++;
+    }
+}
+
+$media = $totalePari/$contatorePari;
+echo($media);
+
+
