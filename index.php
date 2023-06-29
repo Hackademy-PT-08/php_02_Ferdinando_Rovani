@@ -72,3 +72,35 @@ for($i=0; $i<=100; $i++){
     }
 }
 
+// ESERCIZIO EXTRA
+// Scrivere un programma che converta un voto numerico (v) in un giudizio seguendo questi parametri:
+// v < 18: insufficiente
+// 18 <= v < 21: sufficiente
+// 21 <= v < 24: buono
+// 24 <= v < 27: distinto
+// 27 <= v <= 29: ottimo
+// v = 30: eccellente
+// Esempio:
+// Input: v = 29
+// Output: Ottimo
+
+$v = 29;
+$giudizio = '';
+
+if ($v < 18) {
+    $giudizio = 'Insufficiente';
+} elseif ($v >= 18 && $v < 21) {
+    $giudizio = 'Sufficiente';
+} elseif ($v >= 21 && $v < 24) {
+    $giudizio = 'Buono';
+} elseif ($v >= 24 && $v < 27) {
+    $giudizio = 'Distinto';
+} elseif ($v >= 27 && $v <= 29) {
+    $giudizio = 'Ottimo';
+} elseif ($v == 30) {
+    $giudizio = 'Eccellente';
+}
+
+echo "Input: v = $v\n";
+echo "Output: $giudizio";
+
